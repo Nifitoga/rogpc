@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма входа</title>
+  <link rel="stylesheet" href="login_page.css">
+</head>
+<body>
+
+  <div class="login-container">
+    <h2 class="vh">Вход</h2>
+    <form onsubmit="return loginUser(event)">
+      <div class="form-group">
+        <label for="username" class="un">Имя пользователя</label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password" class="pw">Пароль</label>
+        <input type="password" id="password" required>
+      </div>
+      <button type="submit" class="login-btn">Войти</button>
+    </form>
+    <div class="message" id="message"></div>
+  </div>
+
+  <script src="login_page.js"></script>
+</body>
+</html>

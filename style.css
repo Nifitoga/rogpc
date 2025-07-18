@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw;
+  width: 100vw;
+  background: linear-gradient(125deg, #6dd5ed, #000000);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  margin-left: 5vw;
+}
+
+.logo_text {
+  margin: 15px;
+  padding: 5px;
+  font-size: 24px;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nav_buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 5vw;
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: red;
+  cursor: pointer;
+  transition: color 2s linear;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 96%;
+  height: 80vh;
+  margin: 0 2vw;
+  background: url('/112429.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.title_bar {
+  display: grid;
+  justify-content: center;
+}
+
+.title_inner {
+  text-align: center;
+  color: white;
+  font-size: 52px;
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+.span {
+  width: 40vw;
+  height: 5px;
+  background: rgb(243, 152, 255);
+  border-radius: 20px;
+  margin: 50px auto;
+}
+
+.btn_bar {
+  text-align: center;
+}
+
+.btn_inner {
+  font-size: 32px;
+  color: rgb(250, 215, 215);
+  text-decoration: none;
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+.separator {
+  display: flex;
+  justify-content: center;
+}
+
+.description_block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "img title title title"
+    "img title title title"
+    "img text text .";
+  padding: 0 100px;
+  gap: 20px;
+}
+
+.dpt_img {
+  grid-area: img;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dpt_title {
+  grid-area: title;
+}
+
+.dpt_text {
+  margin-bottom: 40px;
+  line-height: 22px;
+  grid-area: text;
+}
+.footer{
+  height: auto;
+  margin-top: 5vh;
+  background: linear-gradient(125deg, #6dd5ed, #000000);
+}
+.footer_container{
+    column-gap: 2.5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "block1 block2";
+}
+.block1{
+  margin-bottom: 5px;
+  margin-left: 30vw;
+    line-height: 25px;
+    cursor: pointer;
+    color: black;
+    display: grid;
+    justify-content: center;
+    grid-area: block1;
+}
+.block2{
+  margin-right: 35vw;
+    margin-top: 5px;
+    display: grid;
+    justify-content: center;
+    grid-area: block2;
+}
+.bo{
+  text-decoration: none;
+color: white;
+}
